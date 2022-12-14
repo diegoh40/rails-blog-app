@@ -120,7 +120,7 @@ Example command:
 To run the project, execute the following command:
 `rails server`
 <!--
-Example command:
+Example command:.
 
 ```sh
   rails server
