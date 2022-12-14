@@ -20,6 +20,7 @@ node_modules/
 !/tmp/pids/.keep
 
 # Ignore uploaded files in development.
+/spec/*
 /storage/*
 !/storage/.keep
 /tmp/storage/*
@@ -29,5 +30,4 @@ node_modules/
 /public/assets
 
 # Ignore master key for decrypting credentials and more.
-/spec/*
 /config/master.key
