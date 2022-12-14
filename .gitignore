@@ -4,17 +4,21 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
+/spec/*
 # Ignore bundler config.
 /.bundle
 node_modules/
+/spec/*
 
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+/spec/*
 
 # Ignore pidfiles, but keep the directory.
+/spec/*
 /tmp/pids/*
 !/tmp/pids/
 !/tmp/pids/.keep
@@ -30,4 +34,5 @@ node_modules/
 /public/assets
 
 # Ignore master key for decrypting credentials and more.
+/spec/*
 /config/master.key
