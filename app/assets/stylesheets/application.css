@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.page_body {
+  padding: 20px;
+}
+
+.user_link,
+.posts_link {
+  text-decoration: none;
+}
+
+.user_details {
+  align-items: center;
+  width: 100%;
+}
+
+.user_data {
+  align-items: center;
+  width: 80%;
+  height: 100px;
+}
+
+.user_image {
+  width: 100px;
+}
+
+.total_posts {
+  align-self: flex-end;
+}
+
+.bio_label {
+  margin-bottom: 30px;
+}
+
+.post_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.post_interactions {
+  align-self: flex-end;
+  width: 150px;
+}
+
+.post-dlt-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.comments_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post_button_container,
+.pagination_button_container {
+  display: flex;
+  justify-content: center;
+}
+
+.posts_button,
+.pagination_button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.user_data,
+.user_bio_container,
+.post_card,
+.comments_container,
+.complete_post {
+  padding: 12px;
+  border: 1px solid black;
+}
+
+ul .user_container:not(:first-child),
+.user_bio_container,
+.post_text,
+.post_card,
+.posts_button,
+.pagination_button,
+.post_complete_text {
+  margin-top: 12px;
+}
+
+.user_details,
+.user_data,
+.post_interactions,
+.post_head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_heading {
+  text-align: center;
+}
+
+.new_user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign_in_options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.field,
+.form_heading,
+.reg-log-btn,
+.actions {
+  margin-top: 12px;
+}
+
+#user_Name,
+#user_email,
+#user_Bio,
+#user_Photo,
+#user_password,
+#user_password_confirmation,
+.reg-log-btn,
+.actions > input[type="submit"],
+#user_role {
+  width: 300px;
+  height: 30px;
+}
+
+@media screen and (min-width: 520px) {
+  #user_Name,
+  #user_email,
+  #user_Bio,
+  #user_Photo,
+  #user_password,
+  #user_password_confirmation,
+  .reg-log-btn,
+  .actions > input[type="submit"],
+  #user_role {
+    width: 450px;
+  }
+}
