@@ -29,5 +29,5 @@ node_modules/
 /public/assets
 
 # Ignore master key for decrypting credentials and more.
-spec/*
+/spec/*
 /config/master.key
