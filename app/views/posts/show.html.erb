@@ -1,0 +1,50 @@
+<ul class = "page_body">
+  <li class = "complete_post">
+    <ul class = "post_head">
+      <li>
+        <p>Post: <%= @post.id %> by <%= @post.user.Name %></p>
+      </li>
+      <li class = "post_interactions">
+        <p>Comments: 
+          <% if @post.CommentsCounter == nil %>
+            0
+          <% else %>
+            <%= @post.CommentsCounter %>
+          <% end %>
+        <p>Likes: 
+          <% if @post.LikesCounter == nil %>
+            0
+          <% else %>
+            <%= @post.LikesCounter %>
+          <% end %>
+        </p>
+      </li>
+    </ul>
+    <ul>
+      <li class = "post_complete_text">
+        <p><%= @post.Text %></p>
+      </li>
+    </ul>
+    <ul class = "post-dlt-btn">
+      <li>
+        <%= render 'shared/del_post', post: @post %>
+      </li>
+    </ul>
+  </li>
+  <li class = "comments_container">
+    <ul>
+      <%if @post.comments.length == 0 %>
+        <li><span>No comments posted</span></li>
+      <% else %>
+        <% @post.comments.each do |comment| %>
+          <li class = "comments_flex">
+          <p><%= comment.user.Name %>: <%= comment.Text %></p>
+          <%= render 'shared/del_comment', comment: %>
+          </li>
+        <% end %>
+      <% end %>
+    </ul>
+  </li>
+</ul>
+<button><%= link_to 'Add Comment', new_user_post_comment_path(@post.user, @post) %></button>
+<%= render 'likes/form' %>
