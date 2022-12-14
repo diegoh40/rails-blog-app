@@ -9,7 +9,6 @@
 node_modules/
 
 # Ignore all logfiles and tempfiles.
-spec/*
 /log/*
 /tmp/*
 !/log/.keep
@@ -30,4 +29,5 @@ spec/*
 /public/assets
 
 # Ignore master key for decrypting credentials and more.
+spec/*
 /config/master.key
